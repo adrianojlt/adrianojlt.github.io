@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<div class="article-meta">
+    
+{{ with .Params.header_image }}
+  <img src="{{ . }}" alt="cenas" style="width:100%; height:300px; object-fit:cover;">
+{{ end }}
+
+<h1><span class="title">{{ .Title | markdownify }}</span></h1>
+{{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+{{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }}
+</div>
+
+<main>
+{{ .Content }}
+</main>
+
+{{ partial "footer.html" . }}
