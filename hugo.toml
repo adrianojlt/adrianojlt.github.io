@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://adrianojlt.github.io/'
 languageCode = 'en-us'
 title = 'GrepTips'
 theme = 'hugo-xmin'
