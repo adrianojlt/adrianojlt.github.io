@@ -1,6 +1,6 @@
 +++
 title = 'Github Actions'
-date = '2025-08-28'
+date = '2025-08-12'
 draft = false
 #author = 'adriano'
 header_image = "/images/github_actions.png"
