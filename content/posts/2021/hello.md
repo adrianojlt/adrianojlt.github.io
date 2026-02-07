@@ -2,6 +2,7 @@
 title = 'Hello'
 date = '2021-06-08'
 draft = false
+tags = ['etc']
 #author = 'adriano'
 header_image = "/images/hello02.png"
 +++

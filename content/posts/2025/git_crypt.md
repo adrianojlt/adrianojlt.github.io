@@ -2,6 +2,7 @@
 title = 'Git Repo with encrypted content'
 date = '2025-08-28'
 draft = false
+tags = ['tools']
 #author = 'adriano'
 header_image = "/images/git_crypt.png"
 +++

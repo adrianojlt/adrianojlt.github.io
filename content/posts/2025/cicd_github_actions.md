@@ -2,6 +2,7 @@
 title = 'Github Actions'
 date = '2025-08-12'
 draft = false
+tags = ['devops']
 #author = 'adriano'
 header_image = "/images/github_actions.png"
 +++

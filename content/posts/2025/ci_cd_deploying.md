@@ -2,6 +2,7 @@
 title = 'CI/CD - Integrating and Deploying Continuously'
 date = '2025-06-20'
 draft = false
+tags = ['devops']
 #author = 'adriano'
 header_image = "/images/ci_cd.png"
 +++

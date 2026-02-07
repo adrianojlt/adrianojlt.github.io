@@ -2,6 +2,7 @@
 title = 'Reverse Proxy my Music'
 date = '2025-02-04'
 draft = false
+tags = ['devops']
 #author = 'adriano'
 header_image = "/images/navidrom.png"
 +++

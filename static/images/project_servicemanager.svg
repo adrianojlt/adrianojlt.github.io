@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <rect width="300" height="200" fill="#f0f0f0" rx="8"/>
+  <!-- Window frame -->
+  <rect x="25" y="25" width="250" height="145" fill="#fff" stroke="#ddd" stroke-width="1" rx="4"/>
+  <!-- Title bar -->
+  <rect x="25" y="25" width="250" height="22" fill="#0078D4" rx="4 4 0 0"/>
+  <rect x="25" y="39" width="250" height="8" fill="#0078D4"/>
+  <text x="150" y="40" font-family="sans-serif" font-size="10" fill="#fff" text-anchor="middle">Service Manager</text>
+  <!-- Search bar -->
+  <rect x="35" y="55" width="180" height="16" fill="#fff" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="45" y="66" font-family="sans-serif" font-size="8" fill="#aaa">Search services...</text>
+  <!-- Search icon -->
+  <circle cx="230" cy="63" r="5" fill="none" stroke="#0078D4" stroke-width="1.5"/>
+  <line x1="234" y1="67" x2="238" y2="71" stroke="#0078D4" stroke-width="1.5"/>
+  <!-- Service list rows -->
+  <rect x="35" y="78" width="230" height="18" fill="#E8F0FE" rx="2"/>
+  <circle cx="45" cy="87" r="4" fill="#34A853"/>
+  <text x="55" y="90" font-family="monospace" font-size="8" fill="#333">WinDefend</text>
+  <text x="175" y="90" font-family="sans-serif" font-size="7" fill="#34A853">Running</text>
+  <rect x="220" y="82" width="36" height="10" fill="#0078D4" rx="2"/>
+  <text x="238" y="90" font-family="sans-serif" font-size="6" fill="#fff" text-anchor="middle">Stop</text>
+  <rect x="35" y="100" width="230" height="18" fill="#fff" rx="2"/>
+  <circle cx="45" cy="109" r="4" fill="#E53935"/>
+  <text x="55" y="112" font-family="monospace" font-size="8" fill="#333">Spooler</text>
+  <text x="175" y="112" font-family="sans-serif" font-size="7" fill="#E53935">Stopped</text>
+  <rect x="220" y="104" width="36" height="10" fill="#34A853" rx="2"/>
+  <text x="238" y="112" font-family="sans-serif" font-size="6" fill="#fff" text-anchor="middle">Start</text>
+  <rect x="35" y="122" width="230" height="18" fill="#E8F0FE" rx="2"/>
+  <circle cx="45" cy="131" r="4" fill="#34A853"/>
+  <text x="55" y="134" font-family="monospace" font-size="8" fill="#333">W32Time</text>
+  <text x="175" y="134" font-family="sans-serif" font-size="7" fill="#34A853">Running</text>
+  <rect x="220" y="126" width="36" height="10" fill="#0078D4" rx="2"/>
+  <text x="238" y="134" font-family="sans-serif" font-size="6" fill="#fff" text-anchor="middle">Stop</text>
+  <rect x="35" y="144" width="230" height="18" fill="#fff" rx="2"/>
+  <circle cx="45" cy="153" r="4" fill="#FBBC04"/>
+  <text x="55" y="156" font-family="monospace" font-size="8" fill="#333">BITS</text>
+  <text x="175" y="156" font-family="sans-serif" font-size="7" fill="#FBBC04">Pending</text>
+  <text x="150" y="192" font-family="sans-serif" font-size="11" fill="#888" text-anchor="middle">Service Manager</text>
+</svg>

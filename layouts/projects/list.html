@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+<div class="projects-grid">
+  {{ range .Params.projects }}
+  <div class="project-card">
+    <img class="project-thumbnail" src="{{ .image }}" alt="{{ .name }}">
+    <div class="project-card-body">
+      <h3><a href="{{ .url }}">{{ .name }}</a></h3>
+      <p>{{ .description }}</p>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

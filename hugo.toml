@@ -25,3 +25,15 @@ theme = 'hugo-xmin'
     name = "Articles"
     url = "/posts/"
     weight = 3
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/tags/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 5

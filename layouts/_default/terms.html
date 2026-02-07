@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<h1>{{ .Title }}</h1>
+
+<div class="terms-list">
+  {{ range .Pages }}
+  <a class="term-badge" href="{{ .RelPermalink }}">{{ .Title }} ({{ len .Pages }})</a>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

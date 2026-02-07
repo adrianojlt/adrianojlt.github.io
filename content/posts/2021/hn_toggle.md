@@ -2,6 +2,7 @@
 title = 'Hacker News Toggle Comments'
 date = '2021-06-26'
 draft = false
+tags = ['tools']
 #author = 'adriano'
 header_image = "/images/hn_toggle.png"
 +++
