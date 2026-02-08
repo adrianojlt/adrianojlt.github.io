@@ -7,8 +7,31 @@ body {
 }
 
 /* header and footer areas */
-.menu { padding: 0; }
-.menu li { display: inline-block; margin: 0 3px; }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 auto;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+.menu {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  list-style: none;
+}
+.menu li { display: block; }
 .article-meta, .menu a {
   text-decoration: none;
   background: #eee;
@@ -20,6 +43,24 @@ body {
   color: #fff;
 }
 .menu, .article-meta, footer { text-align: center; }
+
+@media (max-width: 480px) {
+  .hamburger { display: block; }
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+  .menu.open { display: flex; }
+  .menu li { margin: 0; }
+  .menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .menu li:first-child a { border-radius: 5px 5px 0 0; }
+  .menu li:last-child a { border-radius: 0 0 5px 5px; }
+}
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {

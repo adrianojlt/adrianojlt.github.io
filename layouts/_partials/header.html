@@ -11,6 +11,9 @@
 
   <body>
     <nav>
+    <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.menu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="menu">
       {{ $currentURL := .RelPermalink }}
       {{ range .Site.Menus.main }}
