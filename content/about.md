@@ -4,7 +4,7 @@
 draft = false
 +++
 
-Born in the early 80s, I grew up during the golden era of arcade machines. For a long time, that was the closest I got to a “computer.” It wasn’t until the turn of the millennium that I finally had the chance to work with real computers.
+Born in the early 80s, I became completely captivated as a kid by the magical, imaginary worlds of arcade machine games. Back then, those were the closest thing to computers I had access to, sparking a passion that stayed with me for years. It wasn't until the turn of the millennium that I finally got my hands on real computers.
 
 I’ve now spent the last 15 years writing code for a living. This industry moves fast, and we’ve weathered countless transformations. Now, it seems we are facing the biggest one where much of the code might not be written by us anymore. On this site, I share what I’ve learned about building systems that last, by mastering the foundations we can work beyond the code and focus on what humans do best: solving hard problems and driving innovation.
 
