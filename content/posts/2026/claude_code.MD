@@ -17,9 +17,9 @@ Using the `/init` command, Claude Code analyzed the project and created a [CLAUD
 
 `"Limitation: No backtracking — cannot solve puzzles that require guessing/search."`
 
-The first step was [fixing a few minor bugs and asking Claude to add support for importing puzzles from files](https://github.com/adrianojlt/sdk/commit/ea55935d1543161d770f78aca76beb6fe07d67f8) (yes! originally I had to type every number manually). It nailed that on the first try: it installed the required dependencies, compiled the code, and even tested it with real Sudoku puzzles.
+The first step was [fixing a few minor bugs and asking Claude to add support for importing puzzles from files](https://github.com/adrianojlt/sdk/commit/ee5e3e37b54f3744a32ea5735d5b7d7fc5b64b40) (yes! originally I had to type every number manually). It nailed that on the first try: it installed the required dependencies, compiled the code, and even tested it with real Sudoku puzzles.
 
-Next, [I asked to implement the logic needed to solve harder puzzles](https://github.com/adrianojlt/sdk/commit/e9ef532f2d3cdbec1dbbfd10b7b6a3cca0dc044d). That’s where it went down a path that took around 10 minutes. To be honest, I didn’t pay close attention to what it was doing I mostly answered “yes” to its prompts.
+Next, [I asked to implement the logic needed to solve harder puzzles](https://github.com/adrianojlt/sdk/commit/cebd2c17b101fa3d4d671713374c9e48c53cd54a). That’s where it went down a path that took around 10 minutes. To be honest, I didn’t pay close attention to what it was doing I mostly answered “yes” to its prompts.
 
 ![screen claude](/images/screen_claude.png)
 
