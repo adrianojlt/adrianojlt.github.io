@@ -33,7 +33,13 @@ theme = 'hugo-xmin'
     weight = 4
 
   [[menu.main]]
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
+    weight = 5
+
+  [[menu.main]]
     identifier = "projects"
     name = "Projects"
     url = "/projects/"
-    weight = 5
+    weight = 6

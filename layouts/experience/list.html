@@ -1,0 +1,30 @@
+{{ partial "header.html" . }}
+
+<!--
+<h1>{{ .Title }}</h1>
+-->
+
+{{ .Content }}
+
+<div class="timeline">
+  {{ range .Params.experience }}
+  <div class="timeline-entry{{ if eq .type "education" }} timeline-education{{ end }}">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span class="timeline-date">{{ .period }}</span>
+      <h3>{{ .company }}</h3>
+      <h4>{{ .role }}</h4>
+      <p>{{ .description }}</p>
+      {{ if .highlights }}
+      <ul>
+        {{ range .highlights }}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
