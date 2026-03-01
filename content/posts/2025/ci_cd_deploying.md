@@ -55,4 +55,4 @@ What we did in all these steps was "Integration" and "Deployment", we are missin
 ## Automate the "Integration" and "Deploy" to be ... Continuous ...
 
 In the following articles i  show how to do it continuously
-- [Github Actions](/posts/2021/hello)
+- [Github Actions](/posts/2025/cicd_github_actions)
