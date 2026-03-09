@@ -15,15 +15,15 @@ url = "https://github.com/adrianojlt/adrianojlt.github.io"
 
 [[params.projects]]
 name = "Salario"
-description = "Webpage built with HTML and vanilla Javascript to compare 2 portuguese salaries (NET and Gross)"
+description = "Webpage built with React to compare 2 portuguese salaries (NET and Gross)"
 image = "/images/project_salario.svg"
-url = "https://github.com/adrianojlt/portuguese-salary-diff"
+url = "https://github.com/adrianojlt/react-salary-diff"
 
 [[params.projects]]
-name = "Tab Group Chrome Extension"
-description = "Extension to add Shortcuts to handle tab groups"
+name = "S4T"
+description = "Extension to add Shortcuts for Tabs"
 image = "/images/project_tabgroup.svg"
-url = "https://github.com/adrianojlt/tag-group-collapse"
+url = "https://github.com/adrianojlt/S4T"
 
 [[params.projects]]
 name = "Service Manager"

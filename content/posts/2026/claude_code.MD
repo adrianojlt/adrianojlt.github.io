@@ -2,7 +2,7 @@
 title = 'Claude Code and Sudoku'
 date = '2026-02-04'
 draft = false
-tags = ['dev']
+tags = ['dev','claude']
 #author = 'adriano'
 header_image = "/images/claude_code.png"
 +++
