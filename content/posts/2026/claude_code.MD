@@ -7,8 +7,6 @@ tags = ['dev','claude']
 header_image = "/images/claude_code.png"
 +++
 
-
-## Claude Code
 One of my first university projects was implementing a Sudoku solver in C. It worked for some puzzles, but it couldn’t solve all of them, especially the hard ones. I remember reaching a point where the only way forward felt like brute force: trying different numbers and hoping something would stick.
 
 Fast forward to today: I haven’t touched C in years. While installing Claude Code to give it a try, I remembered that old Sudoku program and decided to use it as my first interaction with Claude Code starting from my original C code.

@@ -7,8 +7,6 @@ tags = ['dev','claude']
 header_image = "/images/claude_code.png"
 +++
 
-## Claude Code Quick Reference
-
 Since there are already plenty of tutorials on Claude Code, I decided to create a quick reference guide with all the info I've used so far.
 
 ### Starting a Session
