@@ -50,7 +50,7 @@ claude mcp add my_server \
     -e MYSQL_PORT="3306" \
     -e MYSQL_USER="root" \
     -e MYSQL_PASS='root' \
-    -e MYSQL_DB="my_dabase" \
+    -e MYSQL_DB="my_database" \
     -- npx @benborla29/mcp-server-mysql
 
 claude mcp add mongodb / 
@@ -62,6 +62,7 @@ claude mcp add mongodb /
 
 | Command | Description |
 | :--- | :--- |
+| `/context` | Show the current usage of Context Window |
 | `/help` | List all available slash commands |
 | `/memory` | View and edit Claude's memory files |
 | `/config` | Open settings menu |
