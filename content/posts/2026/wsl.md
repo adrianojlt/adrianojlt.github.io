@@ -9,11 +9,11 @@ header_image = "/images/wsl.png"
 
 ## Using WSL and Docker for Remote Development
 
-I own an HP ZBook with 64 Gb of RAM running Windows 11. With specs like that, it is practically begging to have Linux installed so I can go crazy testing docker containers. Having 64 Gb of memory gives me more than enough breathing room to run a massive stack of services without breaking a sweat.
+I own a HP ZBook with 64 Gb of RAM running Windows 11. With specs like this, it is practically begging to have Linux installed so I can go crazy testing docker containers. Having 64 Gb of memory gives me more than enough breathing room to run a massive stack of services without breaking a sweat.
 
-There was just one catch: I actually need my Windows installation for me and family daily tasks. I do not want to switched entirely to Linux. That is where the **Windows Subsystem for Linux (WSL)** comes in. It allows me to keep my Windows environment while still playing around with Docker in a native-feeling Linux environment.
+There is just one catch: I actually need my Windows installation for me and family daily tasks and I do not want to switch entirely to Linux. That is where the **Windows Subsystem for Linux (WSL)** comes in. It allows me to keep my Windows environment while still playing around with Docker in a native-feeling Linux environment.
 
-By pairing Docker Desktop with WSL, I can get exactly the setup I need. However, getting everything accessible via SSH from another computer requires a few extra steps. Here i will share those configuration:
+By pairing Docker Desktop with WSL, I can get exactly the setup I need. However, getting everything accessible via SSH from another computer requires a few extra steps. Here i will share those configurations:
 
 ### Install and Info
 ```Bash
