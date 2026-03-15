@@ -42,6 +42,7 @@ Since there are already plenty of tutorials on Claude Code, I decided to create 
 | :--- | :--- |
 | `claude plugin install code-simplifier` | Install official plugin |
 | `claude mcp add mariadb -- <command>` | Add a MCP server |
+| `claude mcp remove mariadb -- <command>` | Remove a MCP server |
 | `/mcp list` | List active MCP servers inside a session |
 
 ```bash
