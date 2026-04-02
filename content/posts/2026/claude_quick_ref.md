@@ -27,6 +27,7 @@ Since there are already plenty of tutorials on Claude Code, I decided to create 
 | `claude --permission-mode plan "task"` | Read-only — Claude plans but touches nothing |
 | `claude --permission-mode acceptEdits "task"` | Auto-accepts file edits, still asks for bash commands |
 | `claude --dangerously-skip-permissions "task"` | Full auto — no confirmations at all (YOLO mode) |
+| `claude --enable-auto-mode "task"` | auto mode lets Claude make permission decisions on your behalf |
 
 ## Models
 
