@@ -96,6 +96,7 @@ pre code { background: none; }
 
 /* misc elements */
 img, iframe, video { max-width: 100%; }
+main img { display: block; margin: 0 auto; }
 main { hyphens: auto; }
 blockquote {
   background: #f9f9f9;
