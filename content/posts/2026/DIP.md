@@ -1,6 +1,6 @@
 +++
 title = 'Dependency Inversion'
-date = '2026-04-05'
+date = '2026-04-02'
 tags = ['dev']
 #author = 'adriano'
 header_image = "/images/dip.png"
