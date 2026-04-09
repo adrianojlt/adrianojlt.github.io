@@ -7,15 +7,15 @@ tags = ['dev']
 header_image = "/images/llm_scale.png"
 +++
 
-ChatGPT landed at the end of 2022. That was only a few years ago, and yet daily interaction with LLMs already feels normal. Some of that interaction is explicit, when we open ChatGPT, Perplexity, or Grok. A lot of it is now indirect, because nearly every product team feels forced to ship some kind of AI feature.
+The arrival of ChatGPT at the end of 2022 now feels strangely distant. In just a few years, interacting with large language models has gone from novelty to routine. Sometimes that interaction is explicit, we open ChatGPT, Perplexity, Claude, Gemini, or Grok and ask for help. More often it is embedded in the products we already use, because nearly every software team now feels pressure to ship something labeled _"AI"_.
 
-Most people still talk about this shift in terms of models: which one is smarter, which one has a larger context window, which one benchmarks better. That matters, but it misses the more useful distinction. I see LLMs as black boxes trained on massive amounts of data, and we interact with them through a window: the context window, whether that is **200k**, **1M**, or something else. What changes the result the most is not the black box itself, it is how we use that window.
+Most people still talk about this shift in terms of models: which one is smarter, which one has a larger context window, which one benchmarks better. That matters, but it misses the more useful distinction. I see LLMs as black boxes trained on massive amounts of data, and we interact with them through a window, the context window, whether that is **200k**, **1M**, or something else. What changes the result the most is not the black box itself, it is the interaction and the context we give to that window.
 
-I find the **Kardashev Scale** useful as a framing device for LLM usage. It gives a simple way to describe levels of capability and delegation. The original scale classified civilizations by how much energy they could harness and control: Type I at the scale of a planet, Type II at the scale of a star, and Type III at the scale of a galaxy. The astronomy is not the point. The structure is.
+That is why it helps to think less about model prestige and more about delegation. A useful framing device is the **Kardashev Scale**, the old astronomy concept that classifies civilizations by the amount of energy they can harness. The astrophysics is irrelevant here. What matters is the structure: a progression of control, scope, and operational power.
 
-That same structure maps surprisingly well to how we work with LLMs. **Type I** is the chat prompter. **Type II** is the vibe coder. **Type III** is the autonomous agent. The jump between these levels is not about prompting tricks. It is about how much work you are actually delegating, and how much orchestration still depends on you.
+Applied to LLMs, that structure maps surprisingly well to how people actually use them. **Type I** is the conversational assistant. **Type II** is the tool using coding operator. **Type III** is the autonomous software agent. The move between levels is not about prompt cleverness. It is about how much real work is being delegated and how much orchestration still depends on a human.
 
-## Type I: Chat Prompter
+## Type I: Conversational Assistant
 This is the default mode most people started with. You open a chat, ask a question, get an answer, and then you go do the actual work yourself. The model helps you think, explain, outline, summarize, compare options, or unblock a problem. It is useful, but the output is still mostly text, and the execution layer is still you.
 
 For a developer, Type I looks like asking for help designing a service boundary, debugging a stack trace, comparing Kafka with RabbitMQ, or expanding an article outline. It is fast and cheap, which is why it became habit forming so quickly. The friction is low, and the feedback loop is immediate.
