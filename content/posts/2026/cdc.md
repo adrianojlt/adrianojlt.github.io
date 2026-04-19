@@ -111,10 +111,10 @@ All three layers call the same `triggerRebuild()` method, which is `synchronized
 
 ## The `cdc-sync` Library
 
-I packaged this architecture as a reusable Spring Boot autoconfiguration library called `cdc-sync`.
+I packaged this architecture as a reusable Spring Boot autoconfiguration library called [cdc-sync](https://github.com/adrianojlt/cdc-sync).
 
 It provides:
-- **Transport abstraction**: Direct (same JVM), Redis Streams, or Kafka — controlled by a single config property
+- **Transport abstraction**: Direct (same JVM), Redis Streams, or Kafka controlled by a single config property
 - **Snapshot detection**: The three-layer strategy above, built in
 - **Event dispatch**: Routes events to all registered handler beans
 - **Rebuild invocation**: Calls `rebuildAll()` on all `DenormalizingHandler` beans after the snapshot
@@ -215,7 +215,7 @@ All three modes produce the same `CdcEvent` records and invoke handlers identica
 
 ## The Migration Lifecycle
 
-Here is how `cdc-sync` slots into the three phases of a Strangler Fig migration:
+Here is how [cdc-sync](https://github.com/adrianojlt/cdc-sync) slots into the three phases of a Strangler Fig migration:
 
 **Phase 1 - Transition:** The legacy system runs normally. The CDC pipeline mirrors every change into `raw_*` collections and the denormalized view. The new system reads its own data directly and reads legacy records through an adapter that translates the CDC mirror on the fly. Writes always go to the new system.
 
@@ -234,4 +234,4 @@ Here is how `cdc-sync` slots into the three phases of a Strangler Fig migration:
 | Transport flexibility | direct / Redis / Kafka, config-only switch |
 | Incremental decommission | Strangler Fig: redirect capability by capability |
 
-The `cdc-sync` library provides the transport, detection, and dispatch machinery. The consumer provides the handlers. Adding a new denormalized collection is a single `@Service` class, the rest is wired automatically.
+The [cdc-sync](https://github.com/adrianojlt/cdc-sync) library provides the transport, detection, and dispatch machinery. The consumer provides the handlers. Adding a new denormalized collection is a single `@Service` class, the rest is wired automatically.
