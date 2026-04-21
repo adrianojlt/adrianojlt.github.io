@@ -15,6 +15,7 @@ Since there are already plenty of tutorials on Claude Code, I decided to create 
 | :--- | :--- |
 | `claude` | Start a new interactive session |
 | `claude -c` | Resume the previous session |
+| `claude --add-dir ../lib` | Add extra working directories to context |
 | `claude --resume` | Pick a past session to resume from a list |
 | `claude "your task"` | One-shot query, no interactive session |
 | `claude -p "query"` | Print mode (non-interactive, good for piping) |
@@ -48,15 +49,15 @@ Since there are already plenty of tutorials on Claude Code, I decided to create 
 
 ```bash
 claude mcp add my_server \
-    -e MYSQL_HOST="192.168.1.3" \
+    -e MYSQL_HOST="localhost" \
     -e MYSQL_PORT="3306" \
     -e MYSQL_USER="root" \
     -e MYSQL_PASS='root' \
     -e MYSQL_DB="my_database" \
     -- npx @benborla29/mcp-server-mysql
 
-claude mcp add mongodb / 
-    -e MDB_MCP_CONNECTION_STRING='mongodb://admin:admin@192.168.1.3:27018/my_database' / 
+claude mcp add mongodb \
+    -e MDB_MCP_CONNECTION_STRING='mongodb://admin:admin@localhost:27017/my_database' \
     -- npx -y mongodb-mcp-server
 ```
 
@@ -82,6 +83,7 @@ claude mcp add mongodb /
 | `Ctrl+G` | Open Claude's plan in your editor to review/edit |
 | `Option+Enter` | New line without sending (multi-line input) |
 | `Ctrl+C` | Stop current generation |
+| `Ctrl+O` | Toggle verbose mode |
 | `Ctrl+D` | Exit Claude Code |
 
 ## File Input / Output
@@ -90,6 +92,14 @@ claude mcp add mongodb /
 | :--- | :--- |
 | `@specs/file.md` | Load a file as input context |
 | `"write output to plan.md"` | Ask Claude to write output to a file |
+
+## CLAUDE.md Hierarchy
+| File | Description |
+| :--- | :--- |
+|`~/.claude/CLAUDE.md` | global, applies to all projects| 
+|`./CLAUDE.md` | project root, commit to git for team sharing| 
+|`./src/CLAUDE.md` | subdirectory-specific instructions (e.g., different rules for frontend vs backend)|
+
 
 ## My Workflow Per Feature
 
