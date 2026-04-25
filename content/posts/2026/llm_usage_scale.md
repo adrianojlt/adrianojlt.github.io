@@ -7,16 +7,16 @@ tags = ['dev']
 header_image = "/images/llm_scale.png"
 +++
 
-The arrival of ChatGPT at the end of 2022 now feels strangely distant. In just a few years, interacting with large language models has gone from novelty to routine. Sometimes that interaction is explicit, we open ChatGPT, Perplexity, Claude, Gemini, or Grok and ask for help. More often it is embedded in the products we already use, because nearly every software team now feels pressure to ship something labeled _"AI"_.
+The arrival of ChatGPT at the end of 2022 now feels strangely distant. In just a few years, interacting with large language models has gone from novelty to routine. Sometimes that interaction is explicit. We open ChatGPT, Perplexity, Claude, Gemini, or Grok and ask for help. More often it is embedded in the products we already use, because nearly every software team now feels pressure to ship something labeled _"AI"_.
 
 Most people still talk about this shift in terms of models: which one is smarter, which one has a larger context window, which one benchmarks better. That matters, but it misses the more useful distinction. I see LLMs as black boxes trained on massive amounts of data, and we interact with them through a window, the context window, whether that is **200k**, **1M**, or something else. What changes the result the most is not the black box itself, it is the interaction and the context we give to that window.
 
 That is why it helps to think less about model prestige and more about delegation. A useful framing device is the Kardashev Scale, a concept proposed by astronomer Nikolai Kardashev that classifies civilizations by the amount of energy they can harness and control. In its original form, **Type I** means control at the **scale of a planet**, **Type II** at the **scale of a star**, and **Type III** at the **scale of a galaxy**. The astrophysics is not the point. What matters here is the structure: a progression in control, scope, and operational power.
 
-Applied to LLMs, that structure maps surprisingly well to how people actually use them. **Type I** is the conversational assistant. **Type II** is the tool using coding operator. **Type III** is the autonomous software agent. The move between levels is not about prompt cleverness. It is about how much real work is being delegated and how much orchestration still depends on a human.
+Applied to LLMs, that structure maps surprisingly well to how people actually use them. **Type I** is the conversational assistant. **Type II** is the tool-using coding operator. **Type III** is the autonomous software agent. The move between levels is not about prompt cleverness. It is about how much real work is being delegated and how much orchestration still depends on a human.
 
 ## Type I: Conversational Assistant
-This is the default mode most people started with. You open a chat, ask a question, get an answer, and then you go do the actual work yourself. The model helps you think, explain, outline, summarize, compare options, or unblock a problem. It is useful, but the output is still mostly text, and the execution layer is still you.
+This is the default mode most people start with. You open a chat, ask a question, get an answer, and then you go do the actual work yourself. The model helps you think, explain, outline, summarize, compare options, or unblock a problem. It is useful, but the output is still mostly text, and the execution layer is still you.
 
 For a developer, Type I looks like asking for help designing a service boundary, debugging a stack trace, comparing Kafka with RabbitMQ, or expanding an article outline. It is fast and cheap, which is why it became habit forming so quickly. The friction is low, and the feedback loop is immediate.
 
@@ -25,7 +25,7 @@ The limit is also obvious. The model is not acting in your environment. It is no
 That is why a lot of _"I use AI every day"_ claims are overstated. Many people are just using a better search and draft tool. That is not trivial, but it is also not the same thing as delegating meaningful work.
 
 ## Type II: Vibe Coder
-Type II starts when the model moves out of the chat box and into your machine. Tools like **Claude Code, Codex, Cursor, Gemini CLI**, and similar systems change the interaction model completely. Now the LLM is not just answering, It is reading files, editing code, running commands, writing tests, and implementing things.
+Type II starts when the model moves out of the chat box and into your machine. Tools like **Claude Code, Codex, Cursor, Gemini CLI**, and similar systems change the interaction model completely. Now the LLM is not just answering. It is reading files, editing code, running commands, writing tests, and implementing things.
 
 This is where the productivity jump becomes real. You stop asking, _"How would I build this?"_ and start saying, _"Implement this endpoint, add tests, refactor this module, and update the docs."_ The model becomes an operator inside your development environment.
 
@@ -33,7 +33,7 @@ But this is also where people get sloppy. Vibe coding works well right up until 
 
 The biggest practical problem here is **context rot**. The longer the session, the worse the signal to noise ratio gets. People blame the model, but often the workflow is the problem. They are trying to push planning, execution, review, and correction through one giant, bloated conversation.
 
-The Bridge: Human-Orchestrated Agents
+## The Bridge: Human-Orchestrated Agents
 After enough vibe coding, I started changing the way I worked. Not because the tools were bad, but because the interaction pattern was inefficient.
 
 The process became more structured. First, I discuss the idea in a regular chat tool like Perplexity, ChatGPT, or Grok. I go back and forth until the idea is clearer, the trade offs are explicit, and the actual task is better defined.
