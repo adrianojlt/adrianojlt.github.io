@@ -30,6 +30,18 @@ name = "Service Manager"
 description = "Tool to search and manage Services on Windows"
 image = "/images/project_servicemanager.svg"
 url = "https://github.com/adrianojlt/ServiceManager"
+
+[[params.projects]]
+name = "tellme"
+description = "Do you need help to find the right command to do a specific task? ask AI! ask \"tellme\"!"
+image = "/images/project_tellme.svg"
+url = "https://github.com/adrianojlt/tellme"
+
+[[params.projects]]
+name = "clipx"
+description = "App to Manage Clipboard History and PIN Clipboard Items."
+image = "/images/project_clipx.svg"
+url = "https://github.com/adrianojlt/clipx"
 +++
 
 A collection of personal projects.
