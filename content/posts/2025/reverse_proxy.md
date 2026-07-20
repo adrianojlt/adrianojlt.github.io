@@ -54,7 +54,7 @@ Instead of port **80** we can use **443** for HTTPS with a self signed TLS from 
 ```Bash
 sudo apt-get install certbot python3-certbot-nginx
 ```
-To use this tool nginx needs to be temporarily stopped, then you can run the **certbot** in standalone mode to get the certificate.
+To run certbot in standalone mode, port 80 on the target machine must be free and reachable from the internet. This usually means pausing any service already listening on port 80 and ensuring your router forwards port 80 to the computer where certbot runs. Then you can request the certificate:
 ```Bash
 sudo certbot certonly --standalone -d myhome.ddns.net
 ```
@@ -62,7 +62,7 @@ Check the certification validity:
 ```Bash
 sudo openssl x509 -in /etc/letsencrypt/live/myhome.ddns.net/fullchain.pem -noout -dates
 ```
-Renew the certificate when expired:
+Renew the certificate when expired (same port 80 requirements apply if the original certificate was obtained in standalone mode):
 ```Bash
 sudo certbot renew
 ```
