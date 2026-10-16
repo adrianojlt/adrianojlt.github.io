@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Comparação de salários - Salário</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #ffffff; --text: #1a1a1a; --muted: #5f5f5f; --accent: #1a73e8; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #121212; --text: #ececec; --muted: #a0a0a0; --accent: #8ab4f8; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, sans-serif; }
+    main { max-width: 420px; margin: 0 auto; padding: 48px 16px; text-align: center; }
+    h1 { font-size: 22px; margin: 0 0 12px; }
+    p { color: var(--muted); margin: 0 0 28px; }
+    a.button { display: inline-block; padding: 12px 24px; border-radius: 24px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Comparação de salários</h1>
+    <p>Esta comparação abre na app Salário. Instala a app na Google Play e depois volta a tocar no link que recebeste.</p>
+    <a class="button" href="https://play.google.com/store/apps/details?id=pt.adrianojlt.salario">Instalar na Google Play</a>
+  </main>
+  <script>
+    // With the app installed, Android opens the link in the app and this page never loads (App Link). On Android
+    // without the app, go straight to the Play Store. The comparison stays in the fragment and is not sent.
+    if (/Android/i.test(navigator.userAgent)) {
+      location.replace("https://play.google.com/store/apps/details?id=pt.adrianojlt.salario");
+    }
+  </script>
+</body>
+</html>
