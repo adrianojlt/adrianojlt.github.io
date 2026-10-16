@@ -12,20 +12,38 @@
     main { max-width: 420px; margin: 0 auto; padding: 48px 16px; text-align: center; }
     h1 { font-size: 22px; margin: 0 0 12px; }
     p { color: var(--muted); margin: 0 0 28px; }
-    a.button { display: inline-block; padding: 12px 24px; border-radius: 24px; background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; }
+    a.button { display: block; margin: 0 auto 12px; max-width: 280px; padding: 12px 24px; border: 2px solid var(--accent); border-radius: 24px; color: var(--accent); text-decoration: none; font-weight: 600; }
+    a.button.primary { background: var(--accent); color: var(--bg); }
   </style>
 </head>
 <body>
   <main>
     <h1>Comparação de salários</h1>
-    <p>Esta comparação abre na app Salário. Instala a app na Google Play e depois volta a tocar no link que recebeste.</p>
+    <p>Esta comparação abre na app Salário. Se ainda não tens a app, instala-a na Google Play e depois volta a tocar no link que recebeste.</p>
+    <a class="button primary" id="open" href="#" hidden>Abrir na app</a>
     <a class="button" href="https://play.google.com/store/apps/details?id=pt.adrianojlt.salario">Instalar na Google Play</a>
   </main>
   <script>
-    // With the app installed, Android opens the link in the app and this page never loads (App Link). On Android
-    // without the app, go straight to the Play Store. The comparison stays in the fragment and is not sent.
-    if (/Android/i.test(navigator.userAgent)) {
-      location.replace("https://play.google.com/store/apps/details?id=pt.adrianojlt.salario");
+    // With the app installed, Android usually opens the link in the app and this page never loads (App Link).
+    // It loads when the link is typed in the browser, opened in an in-app browser, or not verified, and on
+    // Android without the app. The comparison stays in the fragment and is never sent to the server.
+    var PLAY_URL = "https://play.google.com/store/apps/details?id=pt.adrianojlt.salario";
+    var ua = navigator.userAgent;
+    if (/Android/i.test(ua)) {
+      if (location.hash.length > 1) {
+        // Android's own Intent URI format: the link with its fragment, then #Intent;...;end. With the package set,
+        // Chrome opens the Play Store instead when the app is not installed.
+        var intentUrl = "intent://adrianojlt.github.io/salario/comparar/" + location.hash +
+          "#Intent;scheme=https;package=pt.adrianojlt.salario;end";
+        var open = document.getElementById("open");
+        open.href = intentUrl;
+        open.hidden = false;
+        // In-app browsers (WebView, "; wv)") may not handle intent: links and would replace this page with an
+        // error, so there it waits for the button.
+        if (!/; wv\)/.test(ua)) location.replace(intentUrl);
+      } else {
+        location.replace(PLAY_URL);
+      }
     }
   </script>
 </body>
